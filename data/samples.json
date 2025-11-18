@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "input": "What is the capital of France?",
+    "expected": "Paris"
+  },
+  {
+    "id": 2,
+    "input": "Who wrote the play 'Hamlet'?",
+    "expected": "William Shakespeare"
+  },
+  {
+    "id": 3,
+    "input": "What is the largest planet in our solar system?",
+    "expected": "Jupiter"
+  },
+  {
+    "id": 4,
+    "input": "In which year did the Apollo 11 moon landing take place?",
+    "expected": "1969"
+  },
+  {
+    "id": 5,
+    "input": "What is the chemical formula for water?",
+    "expected": "H2O"
+  }
+]

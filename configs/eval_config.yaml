@@ -1,0 +1,39 @@
+# configs/eval_config.yaml
+# Central configuration for llm-eval-pro.
+# This is deliberately explicit so it can be checked into version control
+# and referenced in experiments and reports.
+
+# Path to the evaluation dataset (relative to project root)
+dataset_path: data/samples.json
+
+# Where to write outputs (CSV + charts)
+output_dir: outputs
+
+# Models to evaluate.
+# "dummy-echo" is a built-in local model useful for testing the pipeline
+# without any API keys.
+models:
+  - name: dummy-echo
+    provider: dummy
+    # Optional: anything in `params` is passed to the provider
+    params:
+      prefix: "[ECHO] "
+
+  # Example for a real OpenAI model (uncomment when ready)
+  # - name: gpt-4o
+  #   provider: openai
+  #   model_id: gpt-4o
+  #   params:
+  #     temperature: 0.0
+  #     max_tokens: 256
+
+# Metrics to compute per example.
+# These are implemented in eval/metrics.py.
+metrics:
+  - exact_match
+  - token_overlap
+  - similarity_ratio
+
+# Optional: limit how many examples we run during quick iterations.
+max_examples: 50
+

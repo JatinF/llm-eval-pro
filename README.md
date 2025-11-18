@@ -39,3 +39,16 @@ llm-eval-pro/
 │
 ├── README.md
 └── requirements.txt
+
+```
+How to run this end-to-end
+# 1. Create virtualenv and install deps
+python -m venv .venv
+source .venv/bin/activate  # or .venv\Scripts\activate on Windows
+pip install -r requirements.txt
+
+# 2. Run evaluation (dummy model)
+python -m eval.compare_models --config configs/eval_config.yaml
+
+# 3. Generate charts
+python -m eval.visualize

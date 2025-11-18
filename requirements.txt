@@ -1,0 +1,4 @@
+pandas
+pyyaml
+matplotlib
+# openai  # optional, only if you use the OpenAI provider
