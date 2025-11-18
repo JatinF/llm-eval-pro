@@ -242,12 +242,12 @@ def run_evaluation(config_path: Path) -> None:
     per_example_df = pd.DataFrame(per_example_rows)
     per_example_path = cfg.output_dir / "per_example_metrics.csv"
     per_example_df.to_csv(per_example_path, index=False)
-    print(f"✅ Saved per-example metrics to {per_example_path}")
+    print(f"Saved per-example metrics to {per_example_path}")
 
     aggregated_df = pd.DataFrame(aggregated_rows)
     aggregated_path = cfg.output_dir / "aggregated_metrics.csv"
     aggregated_df.to_csv(aggregated_path, index=False)
-    print(f"✅ Saved aggregated metrics to {aggregated_path}")
+    print(f"Saved aggregated metrics to {aggregated_path}")
 
 
 def main() -> None:
