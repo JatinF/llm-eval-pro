@@ -18,4 +18,24 @@ It supports custom evaluation metrics, visual dashboards, and automated reports.
 - **Frameworks:** LangChain, Pandas, Matplotlib, W&B  
 - **Infra:** Docker (optional)  
 
+
 ###  Project Structure
+
+```
+llm-eval-pro/
+├── data/
+│ └── samples.json
+│
+├── eval/
+│ ├── metrics.py
+│ ├── compare_models.py
+│ └── visualize.py
+│
+├── configs/
+│ └── eval_config.yaml
+│
+├── notebooks/
+│ └── demo.ipynb
+│
+├── README.md
+└── requirements.txt
